@@ -6,7 +6,7 @@
 /*   By: boel-bou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 11:43:55 by boel-bou          #+#    #+#             */
-/*   Updated: 2023/11/07 14:01:17 by boel-bou         ###   ########.fr       */
+/*   Updated: 2023/11/18 23:46:22 by boel-bou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		l;
 	int		j;
 
-	if (!s1)
+	if (!s1 || !set)
 		return (NULL);
 	i = 0;
 	while (ft_check(set, s1[i]))
